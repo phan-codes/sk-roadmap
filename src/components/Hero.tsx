@@ -4,7 +4,7 @@ import herobg from "../assets/herobg.mp4";
 
 const Hero = () => {
 	return (
-		<section className="relative pt-10 h-screen w-full px-5 md:px-10 md:pt-30 lg:pt-60">
+		<section className="relative pt-20 h-screen w-full px-5 md:px-10 md:pt-30 lg:pt-60">
 			<video
 				autoPlay
 				loop
@@ -15,7 +15,7 @@ const Hero = () => {
 
 			<div className="absolute top-0 left-0 w-full h-full bg-[linear-gradient(to_right,rgba(36,11,77,0.98),rgba(31,10,61,0.9),rgba(36,11,77,0.98))] z-1"></div>
 
-			<div className="relative z-2 flex flex-col gap-y-10 items-center text-center">
+			<div className="relative z-2 flex flex-col gap-y-6 items-center text-center md:gap-y-10">
 				<div className="h-56 min-w-52 relative">
 					<div className="absolute z-0 -inset-x-40 inset-y-0 bg-gradient-to-b from-[#15ecfd] to-[#e01df9] blur-3xl opacity-30"></div>
 					<img src={heroImg} alt="space krashers" className="min-w-52 h-56 rounded-md animate-bounceSlow" />
@@ -24,7 +24,7 @@ const Hero = () => {
 					SPACE KRASHERS
 				</h1>
 				<p className="font-semoibold text-xl">A Social Experiment for Global Empowerment</p>
-				<ChevronDown className="animate-bounce mt-20" />
+				<ChevronDown className="animate-bounce mt-10" />
 			</div>
 		</section>
 	);
