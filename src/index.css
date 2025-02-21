@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@font-face {
+	font-family: "SpaceGrotesk";
+	src: url("assets/fonts/Space_Grotesk/SpaceGrotesk-VariableFont_wght.woff2") format("woff2");
+	font-weight: normal;
+}
+
+@theme {
+	/* SCREEN SIZES */
+
+	--breakpoint-sm: 376px;
+	--breakpoint-md: 664px;
+	--breakpoint-lg: 976px;
+	--breakpoint-xl: 1440px;
+
+	/* FONTS */
+
+	--font-SpaceGrotesk: "SpaceGrotesk", "sans-serif";
+
+	/* ANIMATION */
+
+	--animate-bounceSlow: bounceSlow 10s ease-in-out infinite;
+	@keyframes bounceSlow {
+		0% {
+			transform: translateY(-20px);
+		}
+		50% {
+			transform: translateY(0);
+		}
+		100% {
+			transform: translateY(-20px);
+		}
+	}
+}
