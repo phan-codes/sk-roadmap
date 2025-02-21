@@ -4,7 +4,7 @@ import herobg from "../assets/herobg.mp4";
 
 const Hero = () => {
 	return (
-		<section className="relative pt-60 h-screen w-full px-5 md:px-10">
+		<section className="relative pt-10 h-screen w-full px-5 md:px-10 md:pt-30 lg:pt-60">
 			<video
 				autoPlay
 				loop
